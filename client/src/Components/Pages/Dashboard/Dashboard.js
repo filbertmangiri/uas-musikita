@@ -63,13 +63,13 @@ export default function Dashboard({ code }) {
 			/>
 
 			<div className="flex-grow-1" style={{ overflowY: 'auto' }}>
-				{searchResults.map(track => {
+				{searchResults.map(track => (
 					<TrackSearchResults
 						track={track}
 						key={track.uri}
 						chooseTrack={chooseTrack}
 					/>
-				})}
+				))}
 			</div>
 
 			<div>
