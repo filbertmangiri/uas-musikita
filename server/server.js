@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 
 app.post('/refresh', (req, res) => {
 	const refreshToken = req.body.refreshToken
-	console.log('hi');
+	
 	const spotifyApi = new spotifyWebApi({
 		redirectUri: process.env.REDIRECT_URI,
 		clientId: process.env.CLIENT_ID,
@@ -30,7 +30,6 @@ app.post('/refresh', (req, res) => {
 				expiresIn: data.body.expiresIn,
 			})
 		}).catch((err) => {
-			console.log(err);
 			res.sendStatus(400)
 		}
 	)
@@ -54,7 +53,6 @@ app.post('/login', (req, res) => {
 		})
 	})
 	.catch(err => {
-		console.log(err);
 		res.sendStatus(400)
 	})
 })

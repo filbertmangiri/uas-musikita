@@ -32,9 +32,6 @@ export default function Navbar() {
 							<Link className="nav-link" to="/about">About</Link>
 						</li>
 					</ul>
-					<form>
-						<input className="form-control" type="text" placeholder="Search" aria-label="Search" />
-					</form>
 				</div>
 			</div>
 		</nav>

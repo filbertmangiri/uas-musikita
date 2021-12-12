@@ -73,18 +73,20 @@ export default function Dashboard({ code }) {
 
 	return (
 		<div className="d-flex flex-column" style={{ height: '100vh' }}>
-			<div class="form-floating">
+			<div className="form-floating">
 				<input
 					type="search"
-					className="form-control"
+					className="form-control text-light"
 					placeholder=" "
 					value={search}
 					onChange={e => setSearch(e.target.value)}
+
+					style={{ backgroundColor: 'rgba(0, 0, 0, 0)', border: 'none'}}
 				/>
-				<label>Cari Lagu/Penyanyi</label>
+				<label className='text-light'>Cari Lagu/Penyanyi</label>
 			</div>
 
-			<div className="flex-grow-1" style={{ overflowY: 'auto' }}>
+			<div className="flex-grow-1 mt-4 text-light" style={{ overflowY: 'auto' }}>
 				{searchResults.map(track => (
 					<TrackSearchResults
 						track={track}
@@ -93,7 +95,7 @@ export default function Dashboard({ code }) {
 					/>
 				))}
 				{searchResults.length === 0 && (
-					<div className='text-center' style={{ whiteSpace: 'pre' }}>
+					<div className='text-center text-light' style={{ whiteSpace: 'pre' }}>
 						{lyrics}
 					</div>
 				)}

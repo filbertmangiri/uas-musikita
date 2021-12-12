@@ -6,7 +6,6 @@ export default function UseAuth(code) {
 	const [refreshToken, setRefreshToken] = useState()
 	const [expiresIn, setExpiresIn] = useState()
 
-	console.log(refreshToken);
 
 	useEffect(() => {
 		axios
