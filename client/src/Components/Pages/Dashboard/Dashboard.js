@@ -73,12 +73,16 @@ export default function Dashboard({ code }) {
 
 	return (
 		<div className="d-flex flex-column" style={{ height: '100vh' }}>
-			<input
-				type="search"
-				placeholder="Cari lagu/penyanyi"
-				value={search}
-				onChange={e => setSearch(e.target.value)}
-			/>
+			<div class="form-floating">
+				<input
+					type="search"
+					className="form-control"
+					placeholder=" "
+					value={search}
+					onChange={e => setSearch(e.target.value)}
+				/>
+				<label>Cari Lagu/Penyanyi</label>
+			</div>
 
 			<div className="flex-grow-1" style={{ overflowY: 'auto' }}>
 				{searchResults.map(track => (

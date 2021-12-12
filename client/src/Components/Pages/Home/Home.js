@@ -9,7 +9,7 @@ const code = new URLSearchParams(window.location.search).get('code')
 
 export default function Home() {
 	useEffect(() => {
-		// $('body').removeClass().addClass(styles.background)
+		$('body').removeClass().addClass(styles.background)
 	})
 
 	return code ? (
