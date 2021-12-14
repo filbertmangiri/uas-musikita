@@ -2,7 +2,7 @@
 
 export default function Login() {
 	const client_id = 'be8b5e8c1ffa4fde85eb9526330dfb09'
-	const redirect_uri = 'http://localhost:3000'
+	const redirect_uri = 'https://musikita.netlify.app'
 	
 	const scopes = [
 		'streaming',

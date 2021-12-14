@@ -4,7 +4,6 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "devStart": "nodemon server.js",
     "start": "node server.js"
   },
   "keywords": [],
@@ -17,8 +16,5 @@
     "express": "^4.17.1",
     "lyrics-finder": "^21.7.0",
     "spotify-web-api-node": "^5.0.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
   }
 }

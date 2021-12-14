@@ -11,6 +11,10 @@ app.use(cors())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 
+app.get('/', (req, res) => {
+	res.send('Musikita !')
+})
+
 app.post('/refresh', (req, res) => {
 	const refreshToken = req.body.refreshToken
 	
@@ -63,4 +67,4 @@ app.get('/lyrics', async (req, res) => {
 	res.json({ lyrics })
 })
 
-app.listen(3001)
+app.listen(process.env.PORT || 5000)

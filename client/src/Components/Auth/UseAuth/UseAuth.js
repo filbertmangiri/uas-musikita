@@ -9,7 +9,7 @@ export default function UseAuth(code) {
 
 	useEffect(() => {
 		axios
-		.post('http://localhost:3001/login', {
+		.post('https://uas-musikita.herokuapp.com/login', {
 			code
 		})
 		.then(res => {
@@ -29,7 +29,7 @@ export default function UseAuth(code) {
 		
 		const interval = setInterval(() => {
 			axios
-			.post('http://localhost:3001/refresh', {
+			.post('https://uas-musikita.herokuapp.com/refresh', {
 				refreshToken
 			})
 			.then(res => {

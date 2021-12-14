@@ -1,0 +1,21 @@
+{
+  "name": "musikita",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "cd server && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filbertmangiri/uas-musikita.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filbertmangiri/uas-musikita/issues"
+  },
+  "homepage": "https://github.com/filbertmangiri/uas-musikita#readme"
+}
