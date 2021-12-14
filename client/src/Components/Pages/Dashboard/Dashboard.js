@@ -7,11 +7,12 @@ import MusicPlayer from './MusicPlayer'
 import TrackSearchResults from './TrackSearchResults'
 
 const spotifyApi = new SpotifyWebApi({
-	clientId: '3a3cb05494594984800ca14d25ebe2a2'
+	clientId: 'be8b5e8c1ffa4fde85eb9526330dfb09'
 })
 
 export default function Dashboard({ code }) {
 	const accessToken = UseAuth(code)
+
 	const [search, setSearch] = useState('')
 	const [searchResults, setSearchResults] = useState([])
 	const [playingTrack, setPlayingTrack] = useState()
@@ -40,6 +41,7 @@ export default function Dashboard({ code }) {
 
 	useEffect(() => {
 		if(!accessToken) return
+		
 		spotifyApi.setAccessToken(accessToken)
 	}, [accessToken])
 

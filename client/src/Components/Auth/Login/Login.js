@@ -1,7 +1,7 @@
 
 
 export default function Login() {
-	const client_id = '3a3cb05494594984800ca14d25ebe2a2'
+	const client_id = 'be8b5e8c1ffa4fde85eb9526330dfb09'
 	const redirect_uri = 'http://localhost:3000'
 	
 	const scopes = [
